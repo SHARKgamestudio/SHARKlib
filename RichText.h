@@ -43,8 +43,11 @@ namespace Graphics {
 		RichText operator+(const char* content);
 		RichText operator+(RichText content);
 
-		void SetFGColor(Color color);
-		void SetBGColor(Color color);
+		void SetFGColor(int color);
+		void SetFGColor(int r, int g, int b);
+
+		void SetBGColor(int color);
+		void SetBGColor(int r, int g, int b);
 
 		friend ostream& operator<<(ostream& os, const RichText& str);
 

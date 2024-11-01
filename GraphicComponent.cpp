@@ -1,13 +1,19 @@
 #include "GraphicComponent.h"
 
 namespace Graphics {
-	GraphicComponent::GraphicComponent(int x, int y, Color color) {
+	GraphicComponent::GraphicComponent(int x, int y, int width, int height, int fg_color, int bg_color) {
 		this->position = Vector2(x, y);
-		this->color = color;
+		this->size = Vector2(width, height);
+		
+		this->fg_color = fg_color;
+		this->bg_color = bg_color;
 	}
 
-	GraphicComponent::GraphicComponent(Vector2 position, Color color) {
+	GraphicComponent::GraphicComponent(Vector2 position, Vector2 size, int fg_color, int bg_color) {
 		this->position = position;
-		this->color = color;
+		this->size = size;
+
+		this->fg_color = fg_color;
+		this->bg_color = bg_color;
 	}
 }

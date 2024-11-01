@@ -1,25 +1,32 @@
 #pragma once
 
-#define CL_PREFIX "\033[38;5;"
-#define CL_SUFFIX "\033[0m"
+#define CL_FOREGROUND "\033[38;5;"
+#define CL_BACKGROUND "\033[48;5;"
+#define CL_RESET "\033[0m"
 namespace Graphics {
 	enum Color {
-		Black = 30,
-		White = 37,
-		Red = 31,
-		Green = 32,
-		Blue = 34,
-		Yellow = 33,
-		Magenta = 35,
-		Cyan = 36,
+        Black = 0,
+        White = 7,
 
-		BrightBlack = 90,
-		BrightWhite = 97,
-		BrightRed = 91,
-		BrightGreen = 92,
-		BrightYellow = 93,
-		BrightBlue = 94,
-		BrightMagenta = 95,
-		BrightCyan = 96,
+        Red = 1,
+        Green = 2,
+        Blue = 4,
+
+        Yellow = 3,
+        Magenta = 5,
+        Cyan = 6,
+
+        Bright_Black = 8,
+        Bright_White = 15,
+
+        Bright_Red = 9,
+        Bright_Green = 10,
+        Bright_Blue = 12,
+
+        Bright_Yellow = 11,
+        Bright_Magenta = 13,
+        Bright_Cyan = 14,
 	};
+
+	int RGBToAnsi(int r, int g, int b);
 }

@@ -11,9 +11,12 @@ namespace Graphics {
 	class GraphicComponent {
 	public:
 		Vector2 position;
-		Color color;
+		Vector2 size;
 
-		GraphicComponent(int x, int y, Color = White);
-		GraphicComponent(Vector2 position, Color = White);
+		int fg_color;
+		int bg_color;
+
+		GraphicComponent(int x, int y, int width, int height, int fg_color = White, int bg_color = Black);
+		GraphicComponent(Vector2 position, Vector2 size, int fg_color = White, int bg_color = Black);
 	};
 }

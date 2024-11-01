@@ -17,23 +17,15 @@
 using namespace std;
 
 namespace Graphics {
-	Frame::Frame(int width, int height, Color color) : GraphicComponent(0, 0, color) {
-		this->size = Vector2(width, height);
+	Frame::Frame(int x, int y, int width, int height, int fg_color, int bg_color) : GraphicComponent(x, y, width, height, fg_color, bg_color) {
 	}
-	Frame::Frame(Vector2 size, Color color) : GraphicComponent(0, 0, color) {
-		this->size = size;
-	}
-	Frame::Frame(int width, int height, int x, int y, Color color) : GraphicComponent(x, y, color) {
-		this->size = Vector2(width, height);
-	}
-	Frame::Frame(Vector2 size, Vector2 position, Color color) : GraphicComponent(position, color) {
-		this->size = size;
+	Frame::Frame(Vector2 position, Vector2 size, int fg_color, int bg_color) : GraphicComponent(position, size, fg_color, bg_color) {
 	}
 
 	void Frame::Draw() {
 		RichText visuals(CHAR_218);
 
-		visuals.SetFGColor(this->color);
+		visuals.SetFGColor(fg_color);
 
 		Console::SetCursorLocation(position.x, position.y);
 		cout << visuals;

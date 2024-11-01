@@ -9,6 +9,7 @@
 
 #pragma region Local Dependencies
 
+#include "Color.h"
 #include "Debug.h"
 #include "Char.h"
 
@@ -98,7 +99,7 @@ namespace Graphics {
 		return RichText::Concatenate(this, &content);
 	}
 
-	void RichText::SetFGColor(Color color) {
+	void RichText::SetFGColor(int color) {
 		sprintf_s(this->fg_color, 4, "%d", color);
 		if (color < 100) {
 			this->fg_color[2] = this->fg_color[1];
@@ -108,10 +109,32 @@ namespace Graphics {
 
 		this->fg_color[3] = '\0';
 	}
-	void RichText::SetBGColor(Color color) {
-		int value = int(color + 10);
-		sprintf_s(bg_color, 4, "%d", value);
-		if (value < 100) {
+	void RichText::SetFGColor(int r, int g, int b){
+		int color = RGBToAnsi(r, g, b);
+
+		sprintf_s(this->fg_color, 4, "%d", color);
+		if (color < 100) {
+			this->fg_color[2] = this->fg_color[1];
+			this->fg_color[1] = this->fg_color[0];
+			this->fg_color[0] = '0';
+		}
+
+		this->fg_color[3] = '\0';
+	}
+	void RichText::SetBGColor(int color) {
+		sprintf_s(bg_color, 4, "%d", color);
+		if (color < 100) {
+			this->bg_color[2] = this->bg_color[1];
+			this->bg_color[1] = this->bg_color[0];
+			this->bg_color[0] = '0';
+		}
+
+		this->bg_color[3] = '\0';
+	}
+	void RichText::SetBGColor(int r, int g, int b) {
+		int color = RGBToAnsi(r, g, b);
+		sprintf_s(bg_color, 4, "%d", color);
+		if (color < 100) {
 			this->bg_color[2] = this->bg_color[1];
 			this->bg_color[1] = this->bg_color[0];
 			this->bg_color[0] = '0';
@@ -125,7 +148,7 @@ namespace Graphics {
 	}
 
 	ostream& operator<<(ostream& os, const RichText& str) {
-		os << CL_PREFIX << str.bg_color << ";" << str.fg_color << "m" << str.content << CL_SUFFIX;
+		os << CL_FOREGROUND << str.fg_color << "m" CL_BACKGROUND << str.bg_color << "m" << str.content << CL_RESET;
 		return os;
 	}
 }
