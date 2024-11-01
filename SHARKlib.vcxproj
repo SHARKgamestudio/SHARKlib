@@ -132,6 +132,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Ascii.h" />
+    <ClInclude Include="Button.h" />
     <ClInclude Include="Char.h" />
     <ClInclude Include="Color.h" />
     <ClInclude Include="Console.h" />
@@ -144,6 +145,7 @@
     <ClInclude Include="Vector2.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Button.cpp" />
     <ClCompile Include="Char.cpp" />
     <ClCompile Include="Console.cpp" />
     <ClCompile Include="Debug.cpp" />

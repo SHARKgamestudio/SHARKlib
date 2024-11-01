@@ -36,3 +36,14 @@ void Console::SetCursorLocation(int x, int y) {
 
     SetConsoleCursorPosition(out, position);
 }
+
+Vector2 Console::GetSize() {
+    CONSOLE_SCREEN_BUFFER_INFO screenInfo;
+    int columns, rows;
+
+    GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &screenInfo);
+    columns = screenInfo.srWindow.Right - screenInfo.srWindow.Left + 1;
+    rows = screenInfo.srWindow.Bottom - screenInfo.srWindow.Top + 1;
+
+    return Vector2(columns, rows);
+}

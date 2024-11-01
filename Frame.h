@@ -15,5 +15,5 @@ public:
 	Frame(int width, int height, int x = 0, int y = 0, Color color = White);
 	Frame(Vector2 size, Vector2 position = Vector2(0, 0), Color color = White);
 
-	void Draw();
+	virtual void Draw();
 };

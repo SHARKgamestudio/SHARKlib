@@ -75,6 +75,9 @@
     <ClInclude Include="Console.h">
       <Filter>Fichiers d%27en-tête\Graphics</Filter>
     </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>Fichiers d%27en-tête\Graphics</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Char.cpp">
@@ -100,6 +103,9 @@
     </ClCompile>
     <ClCompile Include="Console.cpp">
       <Filter>Fichiers sources\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
