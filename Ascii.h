@@ -1,257 +1,259 @@
 #pragma once
 
-#define CHAR_000 (char)000
-#define CHAR_001 (char)001
-#define CHAR_002 (char)002
-#define CHAR_003 (char)003
-#define CHAR_004 (char)004
-#define CHAR_005 (char)005
-#define CHAR_006 (char)006
-#define CHAR_007 (char)007
-#define CHAR_008 (char)008
-#define CHAR_009 (char)009
-#define CHAR_010 (char)010
-#define CHAR_011 (char)011
-#define CHAR_012 (char)012
-#define CHAR_013 (char)013
-#define CHAR_014 (char)014
-#define CHAR_015 (char)015
-#define CHAR_016 (char)016
-#define CHAR_017 (char)017
-#define CHAR_018 (char)018
-#define CHAR_019 (char)019
-#define CHAR_020 (char)020
-#define CHAR_021 (char)021
-#define CHAR_022 (char)022
-#define CHAR_023 (char)023
-#define CHAR_024 (char)024
-#define CHAR_025 (char)025
-#define CHAR_026 (char)026
-#define CHAR_027 (char)027
-#define CHAR_028 (char)028
-#define CHAR_029 (char)029
-#define CHAR_030 (char)030
-#define CHAR_031 (char)031
-#define CHAR_032 (char)032
-#define CHAR_033 (char)033
-#define CHAR_034 (char)034
-#define CHAR_035 (char)035
-#define CHAR_036 (char)036
-#define CHAR_037 (char)037
-#define CHAR_038 (char)038
-#define CHAR_039 (char)039
-#define CHAR_040 (char)040
-#define CHAR_041 (char)041
-#define CHAR_042 (char)042
-#define CHAR_043 (char)043
-#define CHAR_044 (char)044
-#define CHAR_045 (char)045
-#define CHAR_046 (char)046
-#define CHAR_047 (char)047
-#define CHAR_048 (char)048
-#define CHAR_049 (char)049
-#define CHAR_050 (char)050
-#define CHAR_051 (char)051
-#define CHAR_052 (char)052
-#define CHAR_053 (char)053
-#define CHAR_054 (char)054
-#define CHAR_055 (char)055
-#define CHAR_056 (char)056
-#define CHAR_057 (char)057
-#define CHAR_058 (char)058
-#define CHAR_059 (char)059
-#define CHAR_060 (char)060
-#define CHAR_061 (char)061
-#define CHAR_062 (char)062
-#define CHAR_063 (char)063
-#define CHAR_064 (char)064
-#define CHAR_065 (char)065
-#define CHAR_066 (char)066
-#define CHAR_067 (char)067
-#define CHAR_068 (char)068
-#define CHAR_069 (char)069
-#define CHAR_070 (char)070
-#define CHAR_071 (char)071
-#define CHAR_072 (char)072
-#define CHAR_073 (char)073
-#define CHAR_074 (char)074
-#define CHAR_075 (char)075
-#define CHAR_076 (char)076
-#define CHAR_077 (char)077
-#define CHAR_078 (char)078
-#define CHAR_079 (char)079
-#define CHAR_080 (char)080
-#define CHAR_081 (char)081
-#define CHAR_082 (char)082
-#define CHAR_083 (char)083
-#define CHAR_084 (char)084
-#define CHAR_085 (char)085
-#define CHAR_086 (char)086
-#define CHAR_087 (char)087
-#define CHAR_088 (char)088
-#define CHAR_089 (char)089
-#define CHAR_090 (char)090
-#define CHAR_091 (char)091
-#define CHAR_092 (char)092
-#define CHAR_093 (char)093
-#define CHAR_094 (char)094
-#define CHAR_095 (char)095
-#define CHAR_096 (char)096
-#define CHAR_097 (char)097
-#define CHAR_098 (char)098
-#define CHAR_099 (char)099
-#define CHAR_100 (char)100
-#define CHAR_101 (char)101
-#define CHAR_102 (char)102
-#define CHAR_103 (char)103
-#define CHAR_104 (char)104
-#define CHAR_105 (char)105
-#define CHAR_106 (char)106
-#define CHAR_107 (char)107
-#define CHAR_108 (char)108
-#define CHAR_109 (char)109
-#define CHAR_110 (char)110
-#define CHAR_111 (char)111
-#define CHAR_112 (char)112
-#define CHAR_113 (char)113
-#define CHAR_114 (char)114
-#define CHAR_115 (char)115
-#define CHAR_116 (char)116
-#define CHAR_117 (char)117
-#define CHAR_118 (char)118
-#define CHAR_119 (char)119
-#define CHAR_120 (char)120
-#define CHAR_121 (char)121
-#define CHAR_122 (char)122
-#define CHAR_123 (char)123
-#define CHAR_124 (char)124
-#define CHAR_125 (char)125
-#define CHAR_126 (char)126
-#define CHAR_127 (char)127
-#define CHAR_128 (char)128
-#define CHAR_129 (char)129
-#define CHAR_130 (char)130
-#define CHAR_131 (char)131
-#define CHAR_132 (char)132
-#define CHAR_133 (char)133
-#define CHAR_134 (char)134
-#define CHAR_135 (char)135
-#define CHAR_136 (char)136
-#define CHAR_137 (char)137
-#define CHAR_138 (char)138
-#define CHAR_139 (char)139
-#define CHAR_140 (char)140
-#define CHAR_141 (char)141
-#define CHAR_142 (char)142
-#define CHAR_143 (char)143
-#define CHAR_144 (char)144
-#define CHAR_145 (char)145
-#define CHAR_146 (char)146
-#define CHAR_147 (char)147
-#define CHAR_148 (char)148
-#define CHAR_149 (char)149
-#define CHAR_150 (char)150
-#define CHAR_151 (char)151
-#define CHAR_152 (char)152
-#define CHAR_153 (char)153
-#define CHAR_154 (char)154
-#define CHAR_155 (char)155
-#define CHAR_156 (char)156
-#define CHAR_157 (char)157
-#define CHAR_158 (char)158
-#define CHAR_159 (char)159
-#define CHAR_160 (char)160
-#define CHAR_161 (char)161
-#define CHAR_162 (char)162
-#define CHAR_163 (char)163
-#define CHAR_164 (char)164
-#define CHAR_165 (char)165
-#define CHAR_166 (char)166
-#define CHAR_167 (char)167
-#define CHAR_168 (char)168
-#define CHAR_169 (char)169
-#define CHAR_170 (char)170
-#define CHAR_171 (char)171
-#define CHAR_172 (char)172
-#define CHAR_173 (char)173
-#define CHAR_174 (char)174
-#define CHAR_175 (char)175
-#define CHAR_176 (char)176
-#define CHAR_177 (char)177
-#define CHAR_178 (char)178
-#define CHAR_179 (char)179
-#define CHAR_180 (char)180
-#define CHAR_181 (char)181
-#define CHAR_182 (char)182
-#define CHAR_183 (char)183
-#define CHAR_184 (char)184
-#define CHAR_185 (char)185
-#define CHAR_186 (char)186
-#define CHAR_187 (char)187
-#define CHAR_188 (char)188
-#define CHAR_189 (char)189
-#define CHAR_190 (char)190
-#define CHAR_191 (char)191
-#define CHAR_192 (char)192
-#define CHAR_193 (char)193
-#define CHAR_194 (char)194
-#define CHAR_195 (char)195
-#define CHAR_196 (char)196
-#define CHAR_197 (char)197
-#define CHAR_198 (char)198
-#define CHAR_199 (char)199
-#define CHAR_200 (char)200
-#define CHAR_201 (char)201
-#define CHAR_202 (char)202
-#define CHAR_203 (char)203
-#define CHAR_204 (char)204
-#define CHAR_205 (char)205
-#define CHAR_206 (char)206
-#define CHAR_207 (char)207
-#define CHAR_208 (char)208
-#define CHAR_209 (char)209
-#define CHAR_210 (char)210
-#define CHAR_211 (char)211
-#define CHAR_212 (char)212
-#define CHAR_213 (char)213
-#define CHAR_214 (char)214
-#define CHAR_215 (char)215
-#define CHAR_216 (char)216
-#define CHAR_217 (char)217
-#define CHAR_218 (char)218
-#define CHAR_219 (char)219
-#define CHAR_220 (char)220
-#define CHAR_221 (char)221
-#define CHAR_222 (char)222
-#define CHAR_223 (char)223
-#define CHAR_224 (char)224
-#define CHAR_225 (char)225
-#define CHAR_226 (char)226
-#define CHAR_227 (char)227
-#define CHAR_228 (char)228
-#define CHAR_229 (char)229
-#define CHAR_230 (char)230
-#define CHAR_231 (char)231
-#define CHAR_232 (char)232
-#define CHAR_233 (char)233
-#define CHAR_234 (char)234
-#define CHAR_235 (char)235
-#define CHAR_236 (char)236
-#define CHAR_237 (char)237
-#define CHAR_238 (char)238
-#define CHAR_239 (char)239
-#define CHAR_240 (char)240
-#define CHAR_241 (char)241
-#define CHAR_242 (char)242
-#define CHAR_243 (char)243
-#define CHAR_244 (char)244
-#define CHAR_245 (char)245
-#define CHAR_246 (char)246
-#define CHAR_247 (char)247
-#define CHAR_248 (char)248
-#define CHAR_249 (char)249
-#define CHAR_250 (char)250
-#define CHAR_251 (char)251
-#define CHAR_252 (char)252
-#define CHAR_253 (char)253
-#define CHAR_254 (char)254
+namespace Graphics {
+	#define CHAR_000 (char)000
+	#define CHAR_001 (char)001
+	#define CHAR_002 (char)002
+	#define CHAR_003 (char)003
+	#define CHAR_004 (char)004
+	#define CHAR_005 (char)005
+	#define CHAR_006 (char)006
+	#define CHAR_007 (char)007
+	#define CHAR_008 (char)008
+	#define CHAR_009 (char)009
+	#define CHAR_010 (char)010
+	#define CHAR_011 (char)011
+	#define CHAR_012 (char)012
+	#define CHAR_013 (char)013
+	#define CHAR_014 (char)014
+	#define CHAR_015 (char)015
+	#define CHAR_016 (char)016
+	#define CHAR_017 (char)017
+	#define CHAR_018 (char)018
+	#define CHAR_019 (char)019
+	#define CHAR_020 (char)020
+	#define CHAR_021 (char)021
+	#define CHAR_022 (char)022
+	#define CHAR_023 (char)023
+	#define CHAR_024 (char)024
+	#define CHAR_025 (char)025
+	#define CHAR_026 (char)026
+	#define CHAR_027 (char)027
+	#define CHAR_028 (char)028
+	#define CHAR_029 (char)029
+	#define CHAR_030 (char)030
+	#define CHAR_031 (char)031
+	#define CHAR_032 (char)032
+	#define CHAR_033 (char)033
+	#define CHAR_034 (char)034
+	#define CHAR_035 (char)035
+	#define CHAR_036 (char)036
+	#define CHAR_037 (char)037
+	#define CHAR_038 (char)038
+	#define CHAR_039 (char)039
+	#define CHAR_040 (char)040
+	#define CHAR_041 (char)041
+	#define CHAR_042 (char)042
+	#define CHAR_043 (char)043
+	#define CHAR_044 (char)044
+	#define CHAR_045 (char)045
+	#define CHAR_046 (char)046
+	#define CHAR_047 (char)047
+	#define CHAR_048 (char)048
+	#define CHAR_049 (char)049
+	#define CHAR_050 (char)050
+	#define CHAR_051 (char)051
+	#define CHAR_052 (char)052
+	#define CHAR_053 (char)053
+	#define CHAR_054 (char)054
+	#define CHAR_055 (char)055
+	#define CHAR_056 (char)056
+	#define CHAR_057 (char)057
+	#define CHAR_058 (char)058
+	#define CHAR_059 (char)059
+	#define CHAR_060 (char)060
+	#define CHAR_061 (char)061
+	#define CHAR_062 (char)062
+	#define CHAR_063 (char)063
+	#define CHAR_064 (char)064
+	#define CHAR_065 (char)065
+	#define CHAR_066 (char)066
+	#define CHAR_067 (char)067
+	#define CHAR_068 (char)068
+	#define CHAR_069 (char)069
+	#define CHAR_070 (char)070
+	#define CHAR_071 (char)071
+	#define CHAR_072 (char)072
+	#define CHAR_073 (char)073
+	#define CHAR_074 (char)074
+	#define CHAR_075 (char)075
+	#define CHAR_076 (char)076
+	#define CHAR_077 (char)077
+	#define CHAR_078 (char)078
+	#define CHAR_079 (char)079
+	#define CHAR_080 (char)080
+	#define CHAR_081 (char)081
+	#define CHAR_082 (char)082
+	#define CHAR_083 (char)083
+	#define CHAR_084 (char)084
+	#define CHAR_085 (char)085
+	#define CHAR_086 (char)086
+	#define CHAR_087 (char)087
+	#define CHAR_088 (char)088
+	#define CHAR_089 (char)089
+	#define CHAR_090 (char)090
+	#define CHAR_091 (char)091
+	#define CHAR_092 (char)092
+	#define CHAR_093 (char)093
+	#define CHAR_094 (char)094
+	#define CHAR_095 (char)095
+	#define CHAR_096 (char)096
+	#define CHAR_097 (char)097
+	#define CHAR_098 (char)098
+	#define CHAR_099 (char)099
+	#define CHAR_100 (char)100
+	#define CHAR_101 (char)101
+	#define CHAR_102 (char)102
+	#define CHAR_103 (char)103
+	#define CHAR_104 (char)104
+	#define CHAR_105 (char)105
+	#define CHAR_106 (char)106
+	#define CHAR_107 (char)107
+	#define CHAR_108 (char)108
+	#define CHAR_109 (char)109
+	#define CHAR_110 (char)110
+	#define CHAR_111 (char)111
+	#define CHAR_112 (char)112
+	#define CHAR_113 (char)113
+	#define CHAR_114 (char)114
+	#define CHAR_115 (char)115
+	#define CHAR_116 (char)116
+	#define CHAR_117 (char)117
+	#define CHAR_118 (char)118
+	#define CHAR_119 (char)119
+	#define CHAR_120 (char)120
+	#define CHAR_121 (char)121
+	#define CHAR_122 (char)122
+	#define CHAR_123 (char)123
+	#define CHAR_124 (char)124
+	#define CHAR_125 (char)125
+	#define CHAR_126 (char)126
+	#define CHAR_127 (char)127
+	#define CHAR_128 (char)128
+	#define CHAR_129 (char)129
+	#define CHAR_130 (char)130
+	#define CHAR_131 (char)131
+	#define CHAR_132 (char)132
+	#define CHAR_133 (char)133
+	#define CHAR_134 (char)134
+	#define CHAR_135 (char)135
+	#define CHAR_136 (char)136
+	#define CHAR_137 (char)137
+	#define CHAR_138 (char)138
+	#define CHAR_139 (char)139
+	#define CHAR_140 (char)140
+	#define CHAR_141 (char)141
+	#define CHAR_142 (char)142
+	#define CHAR_143 (char)143
+	#define CHAR_144 (char)144
+	#define CHAR_145 (char)145
+	#define CHAR_146 (char)146
+	#define CHAR_147 (char)147
+	#define CHAR_148 (char)148
+	#define CHAR_149 (char)149
+	#define CHAR_150 (char)150
+	#define CHAR_151 (char)151
+	#define CHAR_152 (char)152
+	#define CHAR_153 (char)153
+	#define CHAR_154 (char)154
+	#define CHAR_155 (char)155
+	#define CHAR_156 (char)156
+	#define CHAR_157 (char)157
+	#define CHAR_158 (char)158
+	#define CHAR_159 (char)159
+	#define CHAR_160 (char)160
+	#define CHAR_161 (char)161
+	#define CHAR_162 (char)162
+	#define CHAR_163 (char)163
+	#define CHAR_164 (char)164
+	#define CHAR_165 (char)165
+	#define CHAR_166 (char)166
+	#define CHAR_167 (char)167
+	#define CHAR_168 (char)168
+	#define CHAR_169 (char)169
+	#define CHAR_170 (char)170
+	#define CHAR_171 (char)171
+	#define CHAR_172 (char)172
+	#define CHAR_173 (char)173
+	#define CHAR_174 (char)174
+	#define CHAR_175 (char)175
+	#define CHAR_176 (char)176
+	#define CHAR_177 (char)177
+	#define CHAR_178 (char)178
+	#define CHAR_179 (char)179
+	#define CHAR_180 (char)180
+	#define CHAR_181 (char)181
+	#define CHAR_182 (char)182
+	#define CHAR_183 (char)183
+	#define CHAR_184 (char)184
+	#define CHAR_185 (char)185
+	#define CHAR_186 (char)186
+	#define CHAR_187 (char)187
+	#define CHAR_188 (char)188
+	#define CHAR_189 (char)189
+	#define CHAR_190 (char)190
+	#define CHAR_191 (char)191
+	#define CHAR_192 (char)192
+	#define CHAR_193 (char)193
+	#define CHAR_194 (char)194
+	#define CHAR_195 (char)195
+	#define CHAR_196 (char)196
+	#define CHAR_197 (char)197
+	#define CHAR_198 (char)198
+	#define CHAR_199 (char)199
+	#define CHAR_200 (char)200
+	#define CHAR_201 (char)201
+	#define CHAR_202 (char)202
+	#define CHAR_203 (char)203
+	#define CHAR_204 (char)204
+	#define CHAR_205 (char)205
+	#define CHAR_206 (char)206
+	#define CHAR_207 (char)207
+	#define CHAR_208 (char)208
+	#define CHAR_209 (char)209
+	#define CHAR_210 (char)210
+	#define CHAR_211 (char)211
+	#define CHAR_212 (char)212
+	#define CHAR_213 (char)213
+	#define CHAR_214 (char)214
+	#define CHAR_215 (char)215
+	#define CHAR_216 (char)216
+	#define CHAR_217 (char)217
+	#define CHAR_218 (char)218
+	#define CHAR_219 (char)219
+	#define CHAR_220 (char)220
+	#define CHAR_221 (char)221
+	#define CHAR_222 (char)222
+	#define CHAR_223 (char)223
+	#define CHAR_224 (char)224
+	#define CHAR_225 (char)225
+	#define CHAR_226 (char)226
+	#define CHAR_227 (char)227
+	#define CHAR_228 (char)228
+	#define CHAR_229 (char)229
+	#define CHAR_230 (char)230
+	#define CHAR_231 (char)231
+	#define CHAR_232 (char)232
+	#define CHAR_233 (char)233
+	#define CHAR_234 (char)234
+	#define CHAR_235 (char)235
+	#define CHAR_236 (char)236
+	#define CHAR_237 (char)237
+	#define CHAR_238 (char)238
+	#define CHAR_239 (char)239
+	#define CHAR_240 (char)240
+	#define CHAR_241 (char)241
+	#define CHAR_242 (char)242
+	#define CHAR_243 (char)243
+	#define CHAR_244 (char)244
+	#define CHAR_245 (char)245
+	#define CHAR_246 (char)246
+	#define CHAR_247 (char)247
+	#define CHAR_248 (char)248
+	#define CHAR_249 (char)249
+	#define CHAR_250 (char)250
+	#define CHAR_251 (char)251
+	#define CHAR_252 (char)252
+	#define CHAR_253 (char)253
+	#define CHAR_254 (char)254
+}

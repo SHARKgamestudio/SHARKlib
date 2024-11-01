@@ -7,11 +7,13 @@
 
 #pragma endregion
 
-class GraphicComponent {
-public:
-	Vector2 position;
-	Color color;
+namespace Graphics {
+	class GraphicComponent {
+	public:
+		Vector2 position;
+		Color color;
 
-	GraphicComponent(int x, int y, Color=White);
-	GraphicComponent(Vector2 position, Color=White);
-};
+		GraphicComponent(int x, int y, Color = White);
+		GraphicComponent(Vector2 position, Color = White);
+	};
+}

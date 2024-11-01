@@ -9,21 +9,22 @@
 #pragma region Local Dependencies
 
 #include "Ascii.h"
-#include "BString.h"
+#include "RichText.h"
 #include "Console.h"
 
 #pragma endregion
 
 using namespace std;
+using namespace Graphics;
 
 Button::Button(const char* label, Vector2 size) : Frame(size) {
-	this->label = String(label);
+	this->label = RichText(label);
 }
 Button::Button(const char* label, int width, int height, int x, int y) : Frame(width, height, x, y) {
-	this->label = String(label);
+	this->label = RichText(label);
 }
 Button::Button(const char* label, Vector2 size, Vector2 position) : Frame(size, position) {
-	this->label = String(label);
+	this->label = RichText(label);
 }
 
 void Button::Draw() {

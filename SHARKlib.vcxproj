@@ -140,7 +140,7 @@
     <ClInclude Include="Frame.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="GraphicComponent.h" />
-    <ClInclude Include="BString.h" />
+    <ClInclude Include="RichText.h" />
     <ClInclude Include="Vector.h" />
     <ClInclude Include="Vector2.h" />
   </ItemGroup>
@@ -151,7 +151,7 @@
     <ClCompile Include="Debug.cpp" />
     <ClCompile Include="Frame.cpp" />
     <ClCompile Include="GraphicComponent.cpp" />
-    <ClCompile Include="BString.cpp" />
+    <ClCompile Include="RichText.cpp" />
     <ClCompile Include="Vector.cpp" />
     <ClCompile Include="Vector2.cpp" />
   </ItemGroup>

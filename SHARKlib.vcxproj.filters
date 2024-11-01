@@ -34,12 +34,6 @@
     <Filter Include="Fichiers sources\Graphics">
       <UniqueIdentifier>{8e95ab6e-19cd-4502-9c7d-c9de8b4801ec}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Fichiers sources\Arrays">
-      <UniqueIdentifier>{d6f0c696-e939-40c9-a8ef-bea6be86cf3d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Fichiers d%27en-tête\Arrays">
-      <UniqueIdentifier>{c39ff3fe-ba3c-40eb-8a46-b10491767dc0}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Char.h">
@@ -66,9 +60,6 @@
     <ClInclude Include="Ascii.h">
       <Filter>Fichiers d%27en-tête\Graphics</Filter>
     </ClInclude>
-    <ClInclude Include="BString.h">
-      <Filter>Fichiers d%27en-tête\Arrays</Filter>
-    </ClInclude>
     <ClInclude Include="Color.h">
       <Filter>Fichiers d%27en-tête\Graphics</Filter>
     </ClInclude>
@@ -76,6 +67,9 @@
       <Filter>Fichiers d%27en-tête\Graphics</Filter>
     </ClInclude>
     <ClInclude Include="Button.h">
+      <Filter>Fichiers d%27en-tête\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="RichText.h">
       <Filter>Fichiers d%27en-tête\Graphics</Filter>
     </ClInclude>
   </ItemGroup>
@@ -98,14 +92,14 @@
     <ClCompile Include="Frame.cpp">
       <Filter>Fichiers sources\Graphics</Filter>
     </ClCompile>
-    <ClCompile Include="BString.cpp">
-      <Filter>Fichiers sources\Arrays</Filter>
-    </ClCompile>
     <ClCompile Include="Console.cpp">
       <Filter>Fichiers sources\Graphics</Filter>
     </ClCompile>
     <ClCompile Include="Button.cpp">
       <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="RichText.cpp">
+      <Filter>Fichiers sources\Graphics</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

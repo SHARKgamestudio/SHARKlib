@@ -8,42 +8,53 @@
 
 #pragma endregion
 
-void Console::SetFont(int size) {
-    CONSOLE_FONT_INFOEX fontInfo;
-    fontInfo.cbSize = sizeof(fontInfo);
-    fontInfo.nFont = 0;
-    fontInfo.dwFontSize.X = 0;
-    fontInfo.dwFontSize.Y = size;
-    fontInfo.FontFamily = FF_DONTCARE;
-    fontInfo.FontWeight = FW_NORMAL;
-    std::wcscpy(fontInfo.FaceName, L"Consolas");
-    SetCurrentConsoleFontEx(GetStdHandle(STD_OUTPUT_HANDLE), FALSE, &fontInfo);
-}
+namespace Graphics {
+    namespace Console {
 
-void Console::SetCursorVisibility(bool visible) {
-    HANDLE out = GetStdHandle(STD_OUTPUT_HANDLE);
+        void SetWindowMode(WindowMode mode) {
+            if(mode != Normal) { system("mode con COLS=700"); }
+            if(mode == Fullscreen) { ShowWindow(GetConsoleWindow(), SW_MAXIMIZE); SendMessage(GetConsoleWindow(), WM_SYSKEYDOWN, VK_RETURN, 0x20000000); }
+            else { ShowWindow(GetConsoleWindow(), mode); }
+        }
 
-    CONSOLE_CURSOR_INFO cursorInfo;
+        void SetFont(int size) {
+            CONSOLE_FONT_INFOEX fontInfo;
+            fontInfo.cbSize = sizeof(fontInfo);
+            fontInfo.nFont = 0;
+            fontInfo.dwFontSize.X = 0;
+            fontInfo.dwFontSize.Y = size;
+            fontInfo.FontFamily = FF_DONTCARE;
+            fontInfo.FontWeight = FW_NORMAL;
+            std::wcscpy(fontInfo.FaceName, L"Consolas");
+            SetCurrentConsoleFontEx(GetStdHandle(STD_OUTPUT_HANDLE), FALSE, &fontInfo);
+        }
 
-    GetConsoleCursorInfo(out, &cursorInfo);
-    cursorInfo.bVisible = visible;
-    SetConsoleCursorInfo(out, &cursorInfo);
-}
+        void SetCursorVisibility(bool visible) {
+            HANDLE out = GetStdHandle(STD_OUTPUT_HANDLE);
 
-void Console::SetCursorLocation(int x, int y) {
-    HANDLE out = GetStdHandle(STD_OUTPUT_HANDLE);
-    COORD position = { x, y };
+            CONSOLE_CURSOR_INFO cursorInfo;
 
-    SetConsoleCursorPosition(out, position);
-}
+            GetConsoleCursorInfo(out, &cursorInfo);
+            cursorInfo.bVisible = visible;
+            SetConsoleCursorInfo(out, &cursorInfo);
+        }
 
-Vector2 Console::GetSize() {
-    CONSOLE_SCREEN_BUFFER_INFO screenInfo;
-    int columns, rows;
+        void SetCursorLocation(int x, int y) {
+            HANDLE out = GetStdHandle(STD_OUTPUT_HANDLE);
+            COORD position = { (short)x, (short)y };
 
-    GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &screenInfo);
-    columns = screenInfo.srWindow.Right - screenInfo.srWindow.Left + 1;
-    rows = screenInfo.srWindow.Bottom - screenInfo.srWindow.Top + 1;
+            SetConsoleCursorPosition(out, position);
+        }
 
-    return Vector2(columns, rows);
+        Vector2 GetSize() {
+            CONSOLE_SCREEN_BUFFER_INFO screenInfo;
+            int columns, rows;
+
+            GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &screenInfo);
+            columns = screenInfo.srWindow.Right - screenInfo.srWindow.Left + 1;
+            rows = screenInfo.srWindow.Bottom - screenInfo.srWindow.Top + 1;
+
+            return Vector2(columns, rows);
+        }
+    }
 }
