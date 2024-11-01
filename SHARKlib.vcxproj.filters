@@ -95,13 +95,13 @@
     <ClCompile Include="Console.cpp">
       <Filter>Fichiers sources\Graphics</Filter>
     </ClCompile>
-    <ClCompile Include="Button.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
     <ClCompile Include="RichText.cpp">
       <Filter>Fichiers sources\Graphics</Filter>
     </ClCompile>
     <ClCompile Include="Color.cpp">
+      <Filter>Fichiers sources\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
       <Filter>Fichiers sources\Graphics</Filter>
     </ClCompile>
   </ItemGroup>

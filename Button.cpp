@@ -17,14 +17,24 @@
 using namespace std;
 using namespace Graphics;
 
-Button::Button(const char* label, int width, int height, int x, int y) : Frame(x, y, width, height) {
+Button::Button(const char* label, int x, int y, int width, int height, int normal_color, int highlight_color) : Frame(x, y, width, height, normal_color) {
 	this->label = RichText(label);
+	this->normal_color = normal_color;
+	this->highlight_color = highlight_color;
+
+	this->current_color = normal_color;
 }
-Button::Button(const char* label, Vector2 size, Vector2 position) : Frame(position, size) {
+Button::Button(const char* label, Vector2 position, Vector2 size, int normal_color, int highlight_color) : Frame(position, size, normal_color) {
 	this->label = RichText(label);
+	this->normal_color = normal_color;
+	this->highlight_color = highlight_color;
+
+	this->current_color = normal_color;
 }
 
 void Button::Draw() {
+	label.SetFGColor(current_color);
+	fg_color = current_color;
 	Frame::Draw();
 
 	Console::SetCursorLocation(position.x, position.y + int(size.y / 2));
@@ -34,4 +44,10 @@ void Button::Draw() {
 		cout << ' ';
 	}
 	cout << label;
+
+	current_color = normal_color;
+}
+
+void Graphics::Button::Highlight() {
+	current_color = highlight_color;
 }

@@ -17,12 +17,12 @@
 
 namespace Graphics {
 	RichText::RichText() {
-		RichText::InitConsoleToUTF8();
+		//RichText::InitConsoleToUTF8();
 
 		this->content = nullptr; this->length = 0;
 	}
 	RichText::RichText(const char content) {
-		RichText::InitConsoleToUTF8();
+		//RichText::InitConsoleToUTF8();
 		
 		this->length = 1;
 		this->content = new char[this->length + 1];
@@ -34,7 +34,7 @@ namespace Graphics {
 		this->content[this->length] = '\0';
 	}
 	RichText::RichText(const char* content) {
-		RichText::InitConsoleToUTF8();
+		//RichText::InitConsoleToUTF8();
 
 		this->length = Char::GetLength(content);
 		this->content = new char[this->length + 1];

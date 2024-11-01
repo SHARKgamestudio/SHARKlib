@@ -1,4 +1,4 @@
-#include "Frame.h"
+﻿#include "Frame.h"
 
 #pragma region External Dependencies
 
@@ -24,6 +24,7 @@ namespace Graphics {
 
 	void Frame::Draw() {
 		RichText visuals(CHAR_218);
+		//RichText visuals(u8"┌");
 
 		visuals.SetFGColor(fg_color);
 
@@ -31,6 +32,7 @@ namespace Graphics {
 		cout << visuals;
 
 		visuals = CHAR_196;
+		//visuals = u8"─";
 
 		for (int i = 0; i < this->size.x - 2; i++) {
 			Console::SetCursorLocation(position.x + i + 1, position.y);
@@ -38,11 +40,13 @@ namespace Graphics {
 		}
 
 		visuals = CHAR_191;
+		//visuals = u8"┐";
 
 		Console::SetCursorLocation(position.x + size.x - 1, position.y);
 		cout << visuals;
 
 		visuals = CHAR_179;
+		//visuals = u8"│";
 
 		for (int i = 0; i < this->size.y - 2; i++) {
 			Console::SetCursorLocation(position.x, position.y + i + 1);
@@ -53,11 +57,13 @@ namespace Graphics {
 		}
 
 		visuals = CHAR_192;
+		//visuals = u8"└";
 
 		Console::SetCursorLocation(position.x, position.y + size.y - 1);
 		cout << visuals;
 
 		visuals = CHAR_196;
+		//visuals = u8"─";
 
 		for (int i = 0; i < this->size.x - 2; i++) {
 			Console::SetCursorLocation(position.x + i + 1, position.y + size.y - 1);
@@ -65,6 +71,7 @@ namespace Graphics {
 		}
 
 		visuals = CHAR_217;
+		//visuals = u8"┘";
 
 		Console::SetCursorLocation(position.x + size.x - 1, position.y + size.y - 1);
 		cout << visuals;

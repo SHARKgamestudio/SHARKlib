@@ -19,8 +19,8 @@ namespace Graphics {
 	private:
 		char* content;
 
-		char fg_color[4] = "037";
-		char bg_color[4] = "030";
+		char fg_color[4] = "007";
+		char bg_color[4] = "000";
 
 	public:
 		int length;
