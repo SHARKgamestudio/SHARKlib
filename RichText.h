@@ -47,5 +47,7 @@ namespace Graphics {
 		void SetBGColor(Color color);
 
 		friend ostream& operator<<(ostream& os, const RichText& str);
+
+		static void InitConsoleToUTF8();
 	};
 }

@@ -3,6 +3,7 @@
 #pragma region External Dependencies
 
 #include <iostream>
+#include <locale>
 
 #pragma endregion
 
@@ -15,9 +16,13 @@
 
 namespace Graphics {
 	RichText::RichText() {
+		RichText::InitConsoleToUTF8();
+
 		this->content = nullptr; this->length = 0;
 	}
 	RichText::RichText(const char content) {
+		RichText::InitConsoleToUTF8();
+		
 		this->length = 1;
 		this->content = new char[this->length + 1];
 
@@ -28,6 +33,8 @@ namespace Graphics {
 		this->content[this->length] = '\0';
 	}
 	RichText::RichText(const char* content) {
+		RichText::InitConsoleToUTF8();
+
 		this->length = Char::GetLength(content);
 		this->content = new char[this->length + 1];
 
@@ -111,6 +118,10 @@ namespace Graphics {
 		}
 
 		this->bg_color[3] = '\0';
+	}
+
+	void RichText::InitConsoleToUTF8() {
+		setlocale(LC_ALL, "en_US.UTF-8");
 	}
 
 	ostream& operator<<(ostream& os, const RichText& str) {
