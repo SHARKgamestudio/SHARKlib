@@ -140,6 +140,7 @@
     <ClInclude Include="Frame.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="GraphicComponent.h" />
+    <ClInclude Include="Menu.h" />
     <ClInclude Include="RichText.h" />
     <ClInclude Include="Vector.h" />
     <ClInclude Include="Vector2.h" />
@@ -152,6 +153,7 @@
     <ClCompile Include="Debug.cpp" />
     <ClCompile Include="Frame.cpp" />
     <ClCompile Include="GraphicComponent.cpp" />
+    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="RichText.cpp" />
     <ClCompile Include="Vector.cpp" />
     <ClCompile Include="Vector2.cpp" />

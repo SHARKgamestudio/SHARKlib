@@ -18,5 +18,8 @@ namespace Graphics {
 
 		GraphicComponent(int x, int y, int width, int height, int fg_color = White, int bg_color = Black);
 		GraphicComponent(Vector2 position, Vector2 size, int fg_color = White, int bg_color = Black);
+
+		virtual void Draw();
+		virtual void Highlight();
 	};
 }

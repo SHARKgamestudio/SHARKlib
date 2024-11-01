@@ -37,10 +37,10 @@ void Button::Draw() {
 	fg_color = current_color;
 	Frame::Draw();
 
-	Console::SetCursorLocation(position.x, position.y + int(size.y / 2));
+	Console::SetCursorLocation(position.x + 1, position.y + int(size.y / 2));
 
 	int spaces = int(size.x / 2) - int(label.length / 2);
-	for (int i = 0; i < spaces; i++) {
+	for (int i = 0; i < spaces-1; i++) {
 		cout << ' ';
 	}
 	cout << label;

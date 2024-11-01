@@ -16,4 +16,8 @@ namespace Graphics {
 		this->fg_color = fg_color;
 		this->bg_color = bg_color;
 	}
+	void GraphicComponent::Draw() {
+	}
+	void GraphicComponent::Highlight() {
+	}
 }
