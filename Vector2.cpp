@@ -17,3 +17,7 @@ Vector2::Vector2(int x, int y) {
 	this->y = y;
 	this->magnitude = (int)sqrt((x*x)+(y*y));
 }
+
+Vector2 Vector2::operator+(Vector2 vector) {
+	return Vector2(this->x + vector.x, this->y + vector.y);
+}

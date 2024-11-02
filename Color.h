@@ -3,6 +3,7 @@
 #define CL_FOREGROUND "\033[38;5;"
 #define CL_BACKGROUND "\033[48;5;"
 #define CL_RESET "\033[0m"
+
 namespace Graphics {
 	enum Color {
         Black = 0,

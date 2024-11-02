@@ -25,9 +25,16 @@ namespace Graphics {
 		};
 
 		void SetWindowMode(WindowMode mode);
-		void SetFont(int size = 12);
+
+		void SetFont(int size);
+		void SetFont(Vector2 size);
+		void SetFont(int width, int height);
+
 		void SetCursorVisibility(bool visible);
+
 		void SetCursorLocation(int x, int y);
+		void SetCursorLocation(Vector2 location);
+
 		Vector2 GetSize();
 	}
 }

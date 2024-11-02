@@ -18,11 +18,17 @@ namespace Graphics {
         }
 
         void SetFont(int size) {
+            SetFont(0, size);
+        }
+        void SetFont(Vector2 size) {
+            SetFont(size.x, size.y);
+        }
+        void SetFont(int width, int height) {
             CONSOLE_FONT_INFOEX fontInfo;
             fontInfo.cbSize = sizeof(fontInfo);
             fontInfo.nFont = 0;
-            fontInfo.dwFontSize.X = 0;
-            fontInfo.dwFontSize.Y = size;
+            fontInfo.dwFontSize.X = width;
+            fontInfo.dwFontSize.Y = height;
             fontInfo.FontFamily = FF_DONTCARE;
             fontInfo.FontWeight = FW_NORMAL;
             std::wcscpy(fontInfo.FaceName, L"Consolas");
@@ -44,6 +50,9 @@ namespace Graphics {
             COORD position = { (short)x, (short)y };
 
             SetConsoleCursorPosition(out, position);
+        }
+        void SetCursorLocation(Vector2 location) {
+            SetCursorLocation(location.x, location.y);
         }
 
         Vector2 GetSize() {

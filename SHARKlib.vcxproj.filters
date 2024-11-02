@@ -34,6 +34,12 @@
     <Filter Include="Fichiers sources\Graphics">
       <UniqueIdentifier>{8e95ab6e-19cd-4502-9c7d-c9de8b4801ec}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers d%27en-tête\Arrays">
+      <UniqueIdentifier>{7148c92c-909f-42ba-9edb-bfd5f2b1540e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Arrays">
+      <UniqueIdentifier>{c7b9bc43-8376-44d9-bd66-21e9601ee30b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Char.h">
@@ -79,7 +85,13 @@
       <Filter>Fichiers d%27en-tête\Graphics</Filter>
     </ClInclude>
     <ClInclude Include="HorizontalMenu.h">
-      <Filter>Fichiers d%27en-tête</Filter>
+      <Filter>Fichiers d%27en-tête\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Canvas.h">
+      <Filter>Fichiers d%27en-tête\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="IntArray.h">
+      <Filter>Fichiers d%27en-tête\Arrays</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -120,7 +132,16 @@
       <Filter>Fichiers sources\Graphics</Filter>
     </ClCompile>
     <ClCompile Include="HorizontalMenu.cpp">
+      <Filter>Fichiers sources\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Canvas.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
+    <ClCompile Include="IntArray.cpp">
+      <Filter>Fichiers sources\Arrays</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sprite.exe" />
   </ItemGroup>
 </Project>

@@ -1,11 +1,11 @@
 #include "VerticalMenu.h"
 
 namespace Graphics {
-	void Graphics::VerticalMenu::AddElement(GraphicComponent* component) {
+	void VerticalMenu::AddElement(GraphicComponent* component) {
 		Menu::AddElement(component, 0, this->length);
 	}
 
-	void Graphics::VerticalMenu::Update() {
+	void VerticalMenu::Update() {
 		Menu::Update();
 	}
 }

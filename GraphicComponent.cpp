@@ -8,7 +8,6 @@ namespace Graphics {
 		this->fg_color = fg_color;
 		this->bg_color = bg_color;
 	}
-
 	GraphicComponent::GraphicComponent(Vector2 position, Vector2 size, int fg_color, int bg_color) {
 		this->position = position;
 		this->size = size;
@@ -16,8 +15,10 @@ namespace Graphics {
 		this->fg_color = fg_color;
 		this->bg_color = bg_color;
 	}
+	
 	void GraphicComponent::Draw() {
 	}
+	
 	void GraphicComponent::Highlight() {
 	}
 }
