@@ -68,7 +68,7 @@ namespace Graphics {
 		for (int i = 0; i < length; i++) {
 			if (elements[i].x > max_x) { max_x = elements[i].x; }
 		}
-		this->min_x = max_x;
+		this->max_x = max_x;
 
 		int min_y = 0;
 		for (int i = 0; i < length; i++) {

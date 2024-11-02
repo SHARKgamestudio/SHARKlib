@@ -16,7 +16,7 @@ namespace Graphics {
 	};
 	
 	class Menu {
-	private:
+	protected:
 		Vector2 selected;
 		int min_x, min_y, max_x, max_y;
 
@@ -32,6 +32,6 @@ namespace Graphics {
 		Menu(char key_right, char key_left, char key_up, char key_down, char key_confirm);
 
 		void AddElement(GraphicComponent* component, int x, int y);
-		void Update();
+		virtual void Update();
 	};
 }
