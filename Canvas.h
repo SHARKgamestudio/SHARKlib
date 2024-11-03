@@ -27,6 +27,9 @@ namespace Graphics {
 		void SetPixel(int x, int y, int color);
 		void SetPixel(Vector2 location, int color);
 
-		void DrawSprite(Sprite* sprite);
+		void DrawSprite(Sprite* sprite, int x, int y);
+		void DrawSprite(Sprite* sprite, Vector2 location);
+
+		void DrawSpritesheet(Sprite* sprite, int columns, int rows, int index);
 	};
 }

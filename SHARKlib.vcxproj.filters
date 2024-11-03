@@ -134,14 +134,11 @@
     <ClCompile Include="HorizontalMenu.cpp">
       <Filter>Fichiers sources\Graphics</Filter>
     </ClCompile>
-    <ClCompile Include="Canvas.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
     <ClCompile Include="IntArray.cpp">
       <Filter>Fichiers sources\Arrays</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="sprite.exe" />
+    <ClCompile Include="Canvas.cpp">
+      <Filter>Fichiers sources\Graphics</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

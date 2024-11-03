@@ -26,6 +26,8 @@ namespace Graphics {
 	Sprite::Sprite(const char* path) {
 		this->resolution = Vector2(0, 0);
 		this->colors = IntArray();
+
+		this->LoadFromFile(path);
 	}
 
 	void Sprite::LoadFromFile(const char* path) {
@@ -77,17 +79,42 @@ namespace Graphics {
 		Console::SetCursorLocation(position.x + x, position.y + y);
 		cout << CL_BACKGROUND << color << "m" << " " << CL_RESET;
 	}
-
 	void Canvas::SetPixel(Vector2 location, int color) {
 		SetPixel(location.x, location.y, color);
 	}
-	void Canvas::DrawSprite(Sprite* sprite) {
+
+	void Canvas::DrawSprite(Sprite* sprite, int x, int y) {
 		int index = 0;
-		for (int y = 0; y < sprite->resolution.y; y++) {
-			for (int x = 0; x < sprite->resolution.x; x++) {
-				this->SetPixel(x, y, sprite->colors.Get(index));
+		for (int i = 0; i < sprite->resolution.y; i++) {
+			for (int j = 0; j < sprite->resolution.x; j++) {
+				this->SetPixel(x + j, y + i, sprite->colors.Get(index));
 				index++;
 			}
 		}
+	}
+	void Canvas::DrawSprite(Sprite* sprite, Vector2 location) {
+		this->DrawSprite(sprite, location.x, location.y);
+	}
+	
+	void Canvas::DrawSpritesheet(Sprite* sprite, int columns, int rows, int index) {
+		int i = 0, j = 0;
+
+		int width = sprite->resolution.x / columns;
+		int height = sprite->resolution.y / rows;
+
+		int count = width * index;
+
+		while (i < height) {
+			while (j < width) {
+				this->SetPixel(j, i, sprite->colors.Get(count));
+				j++;
+				count++;
+			}
+			std::cout << count;
+			j = 0;
+			i++;
+			count += sprite->resolution.x - width;
+		}
+
 	}
 }
