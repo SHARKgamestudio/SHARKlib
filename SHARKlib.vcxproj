@@ -144,6 +144,7 @@
     <ClInclude Include="HorizontalMenu.h" />
     <ClInclude Include="IntArray.h" />
     <ClInclude Include="Menu.h" />
+    <ClInclude Include="ProgressBar.h" />
     <ClInclude Include="RichText.h" />
     <ClInclude Include="Vector.h" />
     <ClInclude Include="Vector2.h" />
@@ -161,10 +162,14 @@
     <ClCompile Include="HorizontalMenu.cpp" />
     <ClCompile Include="IntArray.cpp" />
     <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="ProgressBar.cpp" />
     <ClCompile Include="RichText.cpp" />
     <ClCompile Include="Vector.cpp" />
     <ClCompile Include="Vector2.cpp" />
     <ClCompile Include="VerticalMenu.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="converter.exe" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

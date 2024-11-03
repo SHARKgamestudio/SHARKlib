@@ -30,6 +30,6 @@ namespace Graphics {
 		void DrawSprite(Sprite* sprite, int x, int y);
 		void DrawSprite(Sprite* sprite, Vector2 location);
 
-		void DrawSpritesheet(Sprite* sprite, int columns, int rows, int index);
+		void DrawSpritesheet(Sprite* sprite, int x, int y, int columns, int rows, int index);
 	};
 }

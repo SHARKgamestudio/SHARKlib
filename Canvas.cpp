@@ -96,25 +96,27 @@ namespace Graphics {
 		this->DrawSprite(sprite, location.x, location.y);
 	}
 	
-	void Canvas::DrawSpritesheet(Sprite* sprite, int columns, int rows, int index) {
+	void Canvas::DrawSpritesheet(Sprite* sprite, int x, int y, int columns, int rows, int index) {
 		int i = 0, j = 0;
 
 		int width = sprite->resolution.x / columns;
 		int height = sprite->resolution.y / rows;
 
-		int count = width * index;
+		int color_x = index % columns;
+		int color_y = (index - color_x) / columns;
+
+		int count = (width * color_x) + ((sprite->resolution.x * height) * color_y);
 
 		while (i < height) {
 			while (j < width) {
-				this->SetPixel(j, i, sprite->colors.Get(count));
+				this->SetPixel(x + j, y + i, sprite->colors.Get(count));
 				j++;
 				count++;
 			}
-			std::cout << count;
+			count += sprite->resolution.x - width;
+			
 			j = 0;
 			i++;
-			count += sprite->resolution.x - width;
 		}
-
 	}
 }

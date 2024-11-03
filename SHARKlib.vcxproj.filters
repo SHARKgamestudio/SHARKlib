@@ -93,6 +93,9 @@
     <ClInclude Include="IntArray.h">
       <Filter>Fichiers d%27en-tête\Arrays</Filter>
     </ClInclude>
+    <ClInclude Include="ProgressBar.h">
+      <Filter>Fichiers d%27en-tête\Graphics</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Char.cpp">
@@ -108,9 +111,6 @@
       <Filter>Fichiers sources\Maths</Filter>
     </ClCompile>
     <ClCompile Include="GraphicComponent.cpp">
-      <Filter>Fichiers sources\Graphics</Filter>
-    </ClCompile>
-    <ClCompile Include="Frame.cpp">
       <Filter>Fichiers sources\Graphics</Filter>
     </ClCompile>
     <ClCompile Include="Console.cpp">
@@ -140,5 +140,14 @@
     <ClCompile Include="Canvas.cpp">
       <Filter>Fichiers sources\Graphics</Filter>
     </ClCompile>
+    <ClCompile Include="Frame.cpp">
+      <Filter>Fichiers sources\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="ProgressBar.cpp">
+      <Filter>Fichiers sources\Graphics</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="converter.exe" />
   </ItemGroup>
 </Project>
