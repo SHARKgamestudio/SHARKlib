@@ -131,6 +131,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Array.h" />
     <ClInclude Include="Ascii.h" />
     <ClInclude Include="Button.h" />
     <ClInclude Include="Canvas.h" />
@@ -143,6 +144,7 @@
     <ClInclude Include="GraphicComponent.h" />
     <ClInclude Include="HorizontalMenu.h" />
     <ClInclude Include="IntArray.h" />
+    <ClInclude Include="Memory.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="ProgressBar.h" />
     <ClInclude Include="RichText.h" />
@@ -151,6 +153,7 @@
     <ClInclude Include="VerticalMenu.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Array.cpp" />
     <ClCompile Include="Button.cpp" />
     <ClCompile Include="Canvas.cpp" />
     <ClCompile Include="Char.cpp" />
@@ -161,6 +164,7 @@
     <ClCompile Include="GraphicComponent.cpp" />
     <ClCompile Include="HorizontalMenu.cpp" />
     <ClCompile Include="IntArray.cpp" />
+    <ClCompile Include="Memory.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="ProgressBar.cpp" />
     <ClCompile Include="RichText.cpp" />
