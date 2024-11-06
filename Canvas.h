@@ -33,5 +33,8 @@ namespace Graphics {
 
 		void DrawSpritesheet(Sprite* sprite, int x, int y, int columns, int rows, int index);
 		void DrawSpritesheet(Sprite* sprite, Vector2 position, Vector2 split, int index);
+
+		void DrawString(Sprite* font, int x, int y, const char* text);
+		//void DrawString();
 	};
 }
