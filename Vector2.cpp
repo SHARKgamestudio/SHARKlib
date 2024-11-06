@@ -21,3 +21,12 @@ Vector2::Vector2(int x, int y) {
 Vector2 Vector2::operator+(Vector2 vector) {
 	return Vector2(this->x + vector.x, this->y + vector.y);
 }
+
+void Vector2::operator+=(Vector2 vector) {
+	this->x += vector.x;
+	this->y += vector.y;
+}
+
+bool Vector2::operator!=(Vector2 vector) {
+	return ((this->x != vector.x) || (this->y != vector.y));
+}

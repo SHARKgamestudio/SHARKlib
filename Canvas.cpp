@@ -58,6 +58,8 @@ namespace Graphics {
 		}
 	}
 
+	Canvas::Canvas() : GraphicComponent(0, 0, 0, 0) {
+	}
 	Canvas::Canvas(int x, int y, int width, int height) : GraphicComponent(x, y, width, height) {
 	}
 	Canvas::Canvas(Vector2 position, Vector2 size) : GraphicComponent(position, size) {
@@ -76,8 +78,8 @@ namespace Graphics {
 		if (y > position.y + size.y)
 			return;
 
-		Console::SetCursorLocation(position.x + x, position.y + y);
-		cout << CL_BACKGROUND << color << "m" << " " << CL_RESET;
+		Console::SetCursorLocation(position.x + (x * 2), position.y + y);
+		cout << CL_BACKGROUND << color << "m" << "  " << CL_RESET;
 	}
 	void Canvas::SetPixel(Vector2 location, int color) {
 		SetPixel(location.x, location.y, color);
@@ -118,5 +120,8 @@ namespace Graphics {
 			j = 0;
 			i++;
 		}
+	}
+	void Canvas::DrawSpritesheet(Sprite* sprite, Vector2 position, Vector2 split, int index) {
+		DrawSpritesheet(sprite, position.x, position.y, split.x, split.y, index);
 	}
 }

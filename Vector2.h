@@ -15,4 +15,6 @@ public:
 	Vector2(int x, int y);
 
 	Vector2 operator+(Vector2 vector);
+	void operator+=(Vector2 vector);
+	bool operator!=(Vector2 vector);
 };
